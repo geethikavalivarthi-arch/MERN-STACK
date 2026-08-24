@@ -1,12 +1,13 @@
-let boxes=document.getElementsByClassName("box");
-console.log(boxes);
-boxes[2].style.backgroundColor="skyblue";
-document.getElementById("yellow").style.backgroundColor="yellow";
-document.querySelector(".box").style.backgroundColor="lavender";
-console.log (document.querySelectorAll(".box"));
-document.querySelectorAll(".box")[1].style.backgroundColor="lightgreen";
-document.querySelectorAll(".box").forEach(e=>{
-    e.style.backgroundColor="skyblue";
+let boxes=document.querySelector(".container").children
+function getRandomColor(){
+    let val1=Math.ceil(0+Math.random()*255);
+    let val1=Math.ceil(0+Math.random()*255);
+    let val1=Math.ceil(0+Math.random()*255);
+    return `rgb(${val1},${val2},${val3})`
+}
+Array.from(boxes).forEach((e)=>{
+    e.style.backgroundColor=getRandomColor();
 
-    
-})
+}
+)
+
