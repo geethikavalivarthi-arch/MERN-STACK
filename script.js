@@ -1,13 +1,6 @@
-let boxes=document.querySelector(".container").children
-function getRandomColor(){
-    let val1=Math.ceil(0+Math.random()*255);
-    let val1=Math.ceil(0+Math.random()*255);
-    let val1=Math.ceil(0+Math.random()*255);
-    return `rgb(${val1},${val2},${val3})`
-}
-Array.from(boxes).forEach((e)=>{
-    e.style.backgroundColor=getRandomColor();
+console.log("He is a hacker")
+console.log("she is the real hacker")
 
-}
-)
-
+setTimeout(()=>{
+    console.log("I am inside set time out");
+},2000);

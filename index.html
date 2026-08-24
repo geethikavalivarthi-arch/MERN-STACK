@@ -3,34 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Bubbling</title>
     <style>
-        .container{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            gap:23px;
+        .child{
+            background-color: aquamarine;
+            border:2px solid black;
+            padding:14px;
+            margin:14px;
+            cursor:pointer;
         }
-        .box{
-            border:2px solid skyblue;
-            height: 45px;
-            width:45px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            
+        .childContainer{
+            background-color: bisque;
+            margin:14px;
+            padding:14px;
+            border:2px solid black;
 
+        }
+        .container{
+            background-color: pink;
+            margin: 14px;
+            padding: 14px;
+            border:2px solid black;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="box">box</div>
-    <div class="box">box</div>
-    <div class="box">box</div>
-    <div class="box">box</div>
-    <div class="box">box</div>
-</div>
-<script src="script.js"></script>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("dblclick",e=>{
+            e.stopPropagation()
+            alert("Child was clicked")
+        })
+        document.querySelector(".childContainer").addEventListener("dblclick",e=>{
+            e.stopPropagation()
+
+            alert("Child container was clicked")
+        })
+        document.querySelector(".container").addEventListener("dblclick",e=>{
+            alert("Container was clicked")
+        })
+
+        function getRandomColour(){
+            let val1=Math.ceil(0+Math.random()*255);
+            let val2=Math.ceil(0+Math.random()*255);
+            let val3=Math.ceil(0+Math.random()*255);
+            return`rgb(${val1},${val2},${val3})`
+        }
+        // let a=setInterval(()=>{
+        //     document.querySelector(".childContainer").style.background=getRandomColour();
+        // },4000);
+        // let b=setInterval(()=>{
+        //     document.querySelector(".child").style.background=getRandomColour();
+        //     document.querySelector(".child").style.color=getRandomColour();
+        // },4000);
+        let a=setTimeout(()=>{
+            document.querySelector(".child").style.background=getRandomColour();
+        },2000)
+    </script>
 </body>
 </html>
