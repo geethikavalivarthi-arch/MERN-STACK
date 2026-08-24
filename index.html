@@ -1,70 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Bubbling</title>
-    <style>
-        .child{
-            background-color: aquamarine;
-            border:2px solid black;
-            padding:14px;
-            margin:14px;
-            cursor:pointer;
-        }
-        .childContainer{
-            background-color: bisque;
-            margin:14px;
-            padding:14px;
-            border:2px solid black;
-
-        }
-        .container{
-            background-color: pink;
-            margin: 14px;
-            padding: 14px;
-            border:2px solid black;
-        }
-    </style>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <section class="childContainer">
-            <div class="child">
-                I am a child
-            </div>
-        </section>
-    </div>
-    <script>
-        document.querySelector(".child").addEventListener("dblclick",e=>{
-            e.stopPropagation()
-            alert("Child was clicked")
-        })
-        document.querySelector(".childContainer").addEventListener("dblclick",e=>{
-            e.stopPropagation()
-
-            alert("Child container was clicked")
-        })
-        document.querySelector(".container").addEventListener("dblclick",e=>{
-            alert("Container was clicked")
-        })
-
-        function getRandomColour(){
-            let val1=Math.ceil(0+Math.random()*255);
-            let val2=Math.ceil(0+Math.random()*255);
-            let val3=Math.ceil(0+Math.random()*255);
-            return`rgb(${val1},${val2},${val3})`
-        }
-        // let a=setInterval(()=>{
-        //     document.querySelector(".childContainer").style.background=getRandomColour();
-        // },4000);
-        // let b=setInterval(()=>{
-        //     document.querySelector(".child").style.background=getRandomColour();
-        //     document.querySelector(".child").style.color=getRandomColour();
-        // },4000);
-        let a=setTimeout(()=>{
-            document.querySelector(".child").style.background=getRandomColour();
-        },2000)
-    </script>
+    <h1>This is a form page</h1>
+    <form method="post">
+        <div>
+            <label for="">Username:</label>
+            <input id="username" type="text" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <textarea id="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        </div>
+        <div>
+            <label fpr="country">Country:</label>
+            <select id="country" name="country">
+                <option>Select a country</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
 </html>
