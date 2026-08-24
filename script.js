@@ -1,88 +1,88 @@
-// function mean(a,b,c,d,e){
-//     console.log((a+b+c+d+e)/5);
-// }
-// mean(1,2,3,4,5)
 
-// const mean2=(a,b,c,d,e)=>{
-//     return(a+b+c+d+e)/5;
-// }
-// mean2
-// const square=(x)=>{
-//     return x*x;
-// }
-// let a=square(10);
+// console.log("looping and functions page");
+// let a=1;
 // console.log(a);
+// console.log(a+1);
+// console.log(a+2);
 
-// const square2=x=> x*x;
-
-// function outer(){
-//     console.log("Outer function running...");
-//     function inner(){
-//         console.log("Inner function running...");
-//     }
-//     inner();
-
+// for (let i=1; i<=100; i++){
+//     console.log(i);
 // }
-// outer();
+// let obj={
+//     name:"Geethu",
+//     roll:31,
+//     branch:"csc"
+// }
+// for (const i in obj) {
+//     const element = obj[i];
 
-// let str="Hello World";
-// console.log(str.length);
+//     console.log(i);
+//     console.log(obj[i]); 
+//     console.log(i,obj[i]);  
+// }
+// for (const i of "hello") {
+//     console.log(i);
+// }
+// let i=1;
+// while(i<50){
+//     console.log("hi");
+//     i++;
+// }
 
-// let str1="Hello";
-// let str2="World";
-// console.log(str1.concat(str2));
+let i=1;
+do{
+    console.log(i);
+    i++;
+}while(i<=5);
 
-// console.log(str1+str2);
+let a=10;
+let b=20;
+let max=(a>b)?a:b;
+console.log("Maximum number is:"+max);
 
-// let text="Hello world";
-// console.log(text.indexOf("w"));
+let x="guava";
+switch(x){
+    case "Banana":
+    console.log("This is a guava");
+    break;
+    case "Apple":
+    console.log("This is a guava");
+    break;
+    default:
+    console.log("I dont need any fruits");
+}
 
-// let str="Hello world";
-// console.log(str.slice(6));
-// console.log(str.slice(0,5));
+for(let i=0; i<=100; i++){
+    if(i % 8 == 0){
+        console.log(i);
+    }
+}
+function nice(name){
+console.log("Hey " +name+" your are nice1");
+console.log("Hey " +name+" your are nice2");
+console.log("Hey " +name+" your are nice3");
+console.log("Hey " +name+" your are nice4");
+}
+nice("geethu");
+function sum(a,b){
+    // 
+    return a+b;
+}
+total=sum(2,3);
+console.log(total);
+function sum2(a,b,c=3){
+    console.log(a+b+c);
+}
+sum2(1,2,3);
+sum2(1,2);
 
-// let greeting="Hello world";
-// console.log(greeting.toUppercase());
-// console.log(greeting.toLowercase());
-
-// let message='Hello,World!';
-// console.log(message);
-
-// let name="Abhinav";
-// let greeting="Hello,"+name+ "! Welcome to JavaScript."
-// console.log(greeting);
-
-// let a=10;
-// let b=5;
-// // let c=a+b;
-// console.log(`The sum of ${a}and${b}is ${a+b}`)
-
-// let oldway="This is line 1.\n"+
-//            "This is line 2.\n"+
-//            "This is line 3.";
-// console.log(oldway);   
-
-let message=`This is line1.
-This is line 2.
-This is line 3.`;
-console.log(message);
-
-let name="Abhinav";
-let age=22;
-
-let html=`
- <div>
-  <h2>${name}</h2>
-  <p>Age:${age}</p>
- </div>
-`;
-console.log(html);
-
-var myArray=[1,"Hello",[2,3]];
-myArray.splice(1,1,"Hello world",[4,5]);
-console.log(myArra
+const func1=()=>{
+    console.log("I am an arrow fumction",)
+}
+func1("Hello");
 
 
-
-
-
+// console.log("Hey bhaai, your are nice1");
+// console.log("Hey bhaai, your are nice2");
+// console.log("Hey bhaai,your are nice3");
+// console.log("Hey bhaai, your are nice4");
