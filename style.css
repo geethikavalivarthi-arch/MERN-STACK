@@ -1,3 +1,8 @@
-body{
-    
+#abc{
+    background-color:yellow;
+    color:red;
+}
+.abc{
+    background-color: blue;
+    color: aliceblue;
 }

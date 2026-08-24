@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color:aqua;
+        }
+        .box1{
+            color:brown;
+            padding:10px;
+            margin:35px;
+            border:2px solid pink;
+            height:200px;
+            box-sizing:border-box;
+        }
+        .box2{
+            color:blueviolet;
+            padding:10px;
+            margin:35px;
+            border:2px solid pink;
+            height:300px;
+            width:300px;
+            box-sizing:border-box;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>This is a form page</h1>
-    <form method="post">
-        <div>
-            <label for="">Username:</label>
-            <input id="username" type="text" name="username" placeholder="Enter your username">
-        </div>
-        <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
-        <div>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <label for="subscribe">Subscribe to newsletter</label>
-        </div>
-        <div>
-            <textarea id="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
-        </div>
-        <div>
-            <label fpr="country">Country:</label>
-            <select id="country" name="country">
-                <option>Select a country</option>
-                <option value="usa">USA</option>
-            </select>
-        </div>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box2 box">
+        I am another box
+    </div>
 </body>
-
 </html>
