@@ -2,36 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chicken Fried Rice</title>
-    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height:433px;
+            width:80vw;
+            padding:3px;
+            margin:3px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color:antiquewhite;
+             position:sticky;
+            top:0px;
+            height:111px;
+            width:100%;
+            margin:0;
+            padding:0;*/
+            /* position:absolute;
+            top:0px;
+            left:10px;  */
+        }
+        .box2{
+            background-color:aqua;
+            /* position:relative;
+            top:34px;
+            left:56px; */
+        }
+        .box3{
+            background-color: pink;
+             position:fixed;
+            bottom:0px;
+            left:8vw;
+            height:111px; 
+        }
+        .box4{
+            background-color: orchid;
+        }
+        .parent{
+            padding:43px;
+            margin:34px;
+            border:3px solid peru;
+            /* position:relative; */
+            /* transform:translate(0);
+            filter:invert(0); */
+        }
+    </style>
 </head>
 <body>
-     
-    <h1>Chicken Fried Rice</h1>
-        
-    <p>A simple and delicious chicken fried rice recipe.</p>
-
-    <img src="https://img.freepik.com/premium-photo/chicken-fried-rice-wooden-bowl_1204613-90.jpg" alt="chicken fried rice">
-    <h2>Ingredients</h2>
-    <ul>
-        <li>2 cups of cooked rice</li>
-        <li>200 grams of chicken</li>
-        <li>onions</li>
-        <li>spices</li>
-        <li>sauces</li>
-        <li>salt and pepper</li>
-        <li>3 tablespoons of butter</li>
-    </ul>
-
-    <h2>Instructions</h2>
-    <ol>
-        <li>chop the onions</li>
-        <li>heat butter in a pan</li>
-        <li>add chicken and choped onions and cook</li>
-        <li>add some salt and sauces to it</li>
-        <li>add some rice and spices to the rice</li>
-        <li>mix well,cook it for 5 mins</li>
-        <li>Then surve it and enjoy</li>
-    </ol>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
 </body>
 </html>

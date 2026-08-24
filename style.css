@@ -1,8 +1,15 @@
-#abc{
-    background-color:yellow;
-    color:red;
+body{
+    background-color:pink;
+    display:flex;
+    justify-content:center;
+    align-items:centre;
+    height:100vh;
 }
-.abc{
-    background-color: blue;
-    color: aliceblue;
+.card{
+    width:300px;
+    background-color:wheat;
+    border:1px solid burlywood;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 3px 10px mediumturquoise;
 }

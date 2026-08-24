@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantuc Tags</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;   
+        }
+        .box{
+            border: 2px solid black;;
+            padding: 34px;
+            box-shadow: 5px 15px 5px red;
+            margin-bottom: 20px;
+        }
+        .box2{
+            border: 2px solid black;;
+            padding: 34px;
+            box-shadow: 5px 15px 5px pink;
+        }
+        .text-shadow{
+            text-shadow: 5px 15px 5px blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-           <ul>
-               <li><a href="index1.html">Home</a></li>
-               <li><a href="aboutus.html">About Us</a></li>
-               <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-          <h1>This is my Semantic page</h1>
-    </main>
-    <footer>
-        Copy Right | All Right Reserved
-    </footer>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box2">
+        I am another box
+    </div>
+    <br><br><br>
+    <p class="text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eos!</p>
 </body>
 </html>
