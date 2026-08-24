@@ -3,45 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Variables</title>
+    <title>Specificity</title>
     <style>
-        :root{
-            --color: rgb(245, 245, 3);
-            --defop: 0.4;
-            --defpad:23px;
-            --seccolor: rgb(158, 66, 66);
+        h1{
+            background-color:burlywood;
         }
-        *{
-            margin: 0;
-            padding: 0;
+        #h1{
+            background-color:aquamarine;
         }
-        .nav{
-            background-color: var(--color);
+        .yellow{
+            background-color:blanchedalmond;
         }
-        ul{
-            display: flex;
-        }
-        ul li{
-            list-style: none;
-            opacity: var(--defop);
-            padding: var(--defpad);
-            border: 2px solid darkcyan;
-        }
-        ul li:first-child{
-            background-color:var(--seccolor);
+        .red{
+            background-color:aquamarine;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-    <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere, quae autem officia quam officiis! Beatae, mollitia ab. Nisi, consequatur.
+    <div>
+        <h1 class="yellow red purple" id="h1">Css specificity</h1>
     </div>
 </body>
 </html>

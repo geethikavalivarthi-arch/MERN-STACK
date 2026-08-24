@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>css display property</title>
     <style>
-        body{
-            background-color:beige;
-        }
         *{
             margin: 0;
             padding: 0;
         }
-        .test{
-            background-color:aquamarine;
+        .box{
+            border: 2px solid blue;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+            display: inline-block;
         }
-         @media screen and (orientation:portrait){
-            body{
-                border: 2px solid darkmagenta;
-            }
-        }
-        @media screen and (max-width:455px){
-            body{
-                background-color: rgb(79, 79, 138);
-                color:whitesmoke;
-            }
+        .box1{
+            /* display: none; */
+            visibility: hidden;
+
         }
     </style>
 </head>
 <body>
-    <div class="test">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero eligendi id aperiam quo repellat quisquam. Sunt perferendis eos porro officia excepturi enim distinctio. Fugit enim eaque veniam iste! Repellat.
+    <div class="box">
+        I am a boxx
     </div>
+    <div class="box">It is a box also.</div>
+    <span>I am a good</span>
+    <span>Speaker.</span>
+    <div class="box box2">
+        I am another box
+    </div>
+          
 </body>
 </html>
