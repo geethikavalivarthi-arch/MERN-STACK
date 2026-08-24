@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Css Variables</title>
     <style>
+        :root{
+            --color: rgb(245, 245, 3);
+            --defop: 0.4;
+            --defpad:23px;
+            --seccolor: rgb(158, 66, 66);
+        }
         *{
             margin: 0;
             padding: 0;
         }
-        .box{
-            background-color:aqua;
+        .nav{
+            background-color: var(--color);
         }
-        .box1{
-            color:brown;
-            padding:10px;
-            margin:35px;
-            border:2px solid pink;
-            height:200px;
-            box-sizing:border-box;
+        ul{
+            display: flex;
         }
-        .box2{
-            color:blueviolet;
-            padding:10px;
-            margin:35px;
-            border:2px solid pink;
-            height:300px;
-            width:300px;
-            box-sizing:border-box;
+        ul li{
+            list-style: none;
+            opacity: var(--defop);
+            padding: var(--defpad);
+            border: 2px solid darkcyan;
+        }
+        ul li:first-child{
+            background-color:var(--seccolor);
         }
     </style>
 </head>
 <body>
-    <div class="box box1">
-        I am a box
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </div>
-    <div class="box2 box">
-        I am another box
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere, quae autem officia quam officiis! Beatae, mollitia ab. Nisi, consequatur.
     </div>
 </body>
 </html>

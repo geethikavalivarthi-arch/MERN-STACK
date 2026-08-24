@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over flow</title>
+    <title>Document</title>
     <style>
-        .box{
-            border: 2px solid blue ;
-            height: 30vh;
-            width: 20vw;
-            /* overflow: scroll; */
-            /* overflow: auto;
-            overflow-x:hidden;
-            overflow-y:scroll; */
-            overflow:auto hidden;
+        body{
+            background-color:beige;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .test{
+            background-color:aquamarine;
+        }
+         @media screen and (orientation:portrait){
+            body{
+                border: 2px solid darkmagenta;
+            }
+        }
+        @media screen and (max-width:455px){
+            body{
+                background-color: rgb(79, 79, 138);
+                color:whitesmoke;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam similique optio quos animi placeat rem reiciendis repellendus explicabo nulla, eligendi fugiat a laborum illum sunt voluptas recusandae dicta nam aperiam inventore neque quas. Reiciendis quo culpa repellendus consectetur blanditiis nulla quasi ipsam?
+    <div class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero eligendi id aperiam quo repellat quisquam. Sunt perferendis eos porro officia excepturi enim distinctio. Fugit enim eaque veniam iste! Repellat.
     </div>
-    
 </body>
 </html>
